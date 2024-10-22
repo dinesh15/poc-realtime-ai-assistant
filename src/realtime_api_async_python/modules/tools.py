@@ -227,7 +227,7 @@ async def open_browser(prompt: str):
     # Use global 'personalization' variable
     browser_urls = personalization.get("browser_urls", [])
     browser_urls_str = ", ".join(browser_urls)
-    browser_command = personalization.get("browser_command", "open -a 'Google Chrome'")
+    browser_command = personalization.get("browser_command", "start")
 
     # Build the structured prompt
     prompt_structure = f"""
